@@ -13,7 +13,7 @@ server.get('/', cors(), (req, res) => {
 });
 
 
-app.get('/bundleren', (req, res) => {
+server.get('/bundleren', (req, res) => {
   const config = {
     method: 'get',
     url: 'http://ec2-52-87-237-8.compute-1.amazonaws.com:3001/bundle',
