@@ -17,7 +17,7 @@ server.get('/', cors(), (req, res) => {
 server.get('/bundleash', (req, res) => {
   const config = {
     method: 'get',
-    url: process.env.ASH_MODULE,
+    url: 'http://18.224.4.136:3000/bundle',
     headers: { },
   };
 
@@ -49,7 +49,7 @@ server.get('/bundleren', (req, res) => {
 server.get('/bundlejavier', (req, res) => {
   const config = {
     method: 'get',
-    url: process.env.JAVIER_MODULE,
+    url: 'http://13.52.77.176:3002/bundle',
     headers: { },
   };
 
@@ -66,7 +66,7 @@ server.get('/bundlejavier', (req, res) => {
 server.get('/bundlejosh', (req, res) => {
   const config = {
     method: 'get',
-    url: process.env.JOSH_MODULE,
+    url: 'http://18.221.87.209:3003/bundle',
     headers: { },
   };
 
