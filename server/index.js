@@ -1,9 +1,10 @@
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
-
+var compression = require('compression')
 const server = express();
 
+server.use(compression())
 server.use(express.static('public'));
 const axios = require('axios');
 
